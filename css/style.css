@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    text-align: center ;
+}
+form {
+     width: 400px;
+    border: 1px solid teal;
+    margin: auto ;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+   text-align: left;
+
+}
+.masukan-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.masukan-data label {
+    width: 150px;
+}
+.masukan-data input {
+    flex: 1;
+    padding: 5px;
+}
+.kontrol-kartu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: 20px;
+
+   
+}
+.kartu {
+    max-width: 800px;
+    margin: 0 auto;
+    display: inline-block;
+    background:  #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px black;
+    transition: transform 0.7s;
+    min-height: 300px;
+    max-width: 300px;
+    flex: 0 1 calc(33.33% - 40px);
+    
+}
+.kontrol-kartu img {
+    width: 200px;
+    border-radius: 8px;
+   
+}
+.kartu:hover {
+    transform: scale(1.05);
+}
+.tombol {
+    background:rgb(206, 79, 6);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+
+}
+.tombol:hover {
+    background: rgb(53, 38, 211);
+    transform: scale(1.05);
+}
+.desain {
+    color: rgb(86, 76, 128);
+}
+footer {
+    background-color:#111;
+    width: 100%;
+    padding: 5 5 5 5;
+}
+footer p {
+    color: white;
+}
+/* Tambahkan ini ke style.css */
+.alert {
+    padding: 10px;
+}
+table {
+border:3px solid #cccccc;
+margin:  auto ;
+border-collapse: collapse;
+font-size: 10pt;
+width: 40%;
+}
+td {
+    padding: 3px;
+    text-align: center;
+}
+th {
+    background-color: steelblue;
+    color: white;
+    height: 30px;
+    padding: 5px;
+}
+
+.hapus  :hover{
+   
+  transform: scale(1.05);
+}
+.delete-btn {
+  
+  transition: transform 0,3s;
+  display: inline-block;
+  width: 24px;   /* ukuran tombol sesuai ikon */
+  height: 24px;
+  background: rgb(247, 59, 59) url(../media/hapus.png) no-repeat center center;
+  background-size: contain ; /* biar proporsional */
+  /* kalau tidak mau border */
+  text-indent: -9999px; /* sembunyikan teks kalau masih ada */
+  border-radius: 2px 2px 2px 2px ;
+}   
+.delete-btn :hover {
+    background: aqua;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+  background-color: white;
+}
